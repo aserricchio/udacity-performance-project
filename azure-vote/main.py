@@ -24,7 +24,7 @@ from opencensus.ext.flask.flask_middleware import FlaskMiddleware
 
 from applicationinsights import TelemetryClient
 
-instrumentation_key='InstrumentationKey=d6f3db6b-e6dc-4fd9-a9c5-65b3679df64f'
+instrumentation_key='InstrumentationKey=28cc76a7-408f-416f-a78a-dc4d97824691'
 # Logging
 config_integration.trace_integrations(['logging'])
 logger = logging.getLogger(__name__)
@@ -57,7 +57,7 @@ middleware = FlaskMiddleware(
     sampler=ProbabilitySampler(rate=1.0),
 )
 
-tc = TelemetryClient('d6f3db6b-e6dc-4fd9-a9c5-65b3679df64f')
+tc = TelemetryClient('28cc76a7-408f-416f-a78a-dc4d97824691')
 
 # Load configurations from environment or config file
 app.config.from_pyfile('config_file.cfg')
